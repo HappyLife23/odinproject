@@ -2,4 +2,39 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: darkgray;
+  /* outline: 2px solid red; */
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+a {
+  width: 50%;
+
+  text-decoration: none;
+}
+input {
+  margin-left: 1rem;
+  gap: 20px;
+  display: flex;
+}
+main {
+  display: flex;
+  margin: 2rem;
+  gap: 1rem;
+}
+#myText {
+  padding: 10px;
+}
+h3 {
+  margin-left: 3rem;
 }
