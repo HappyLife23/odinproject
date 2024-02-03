@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: darkgray;
+  background-color: rgb(225, 206, 96);
   /* outline: 2px solid red; */
 }
 .container {
@@ -28,13 +28,43 @@ input {
   display: flex;
 }
 main {
+  border: 1px solid;
+  padding: 20px;
   display: flex;
   margin: 2rem;
   gap: 1rem;
+  border-radius: 10px;
+}
+label {
+  display: flex;
+  align-items: center;
 }
 #myText {
   padding: 10px;
 }
 h3 {
   margin-left: 3rem;
+}
+
+#myText {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+#myButton {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#localStorage-Btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+
+.greetingOutput {
+  padding: 5px;
+  margin-left: 3rem;
+  display: block;
 }

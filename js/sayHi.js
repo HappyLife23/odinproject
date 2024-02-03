@@ -1,3 +1,3 @@
-export function sayHi(user) {
-    alert(`Hello, ${user}`);
-};
+// export function sayHi(user) {
+//     alert(`Hello, ${user}`);
+// };

@@ -1,3 +1,3 @@
-import { sayHi } from "./sayHi";
-alert(sayHi);
-sayHi('David!')
+// import { sayHi } from "./sayHi";
+// alert(sayHi);
+// sayHi('David!')
