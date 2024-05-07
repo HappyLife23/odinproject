@@ -12,46 +12,41 @@ const myInput = document.getElementById('myText');
 const myButton = document.getElementById('myButton');
 
 // skapar en 'click' event 
+// funktionen welcomeUser() körs
+// inputfältet måste tömmas efter att användaren har matat in information med andra ord efter att funktionen 'welcomeUser har körts klart'
 myButton.addEventListener('click', () => {
-
-    // funktionen welcomeUser() körs
     welcomeUser();
-    
-    myInput.value = ''; // inputfältet måste tömmas efter att användaren har matat in information med andra ord efter att funktionen 'welcomeUser har körts klart'   
+    myInput.value = '';
 });
 
 // skapar en keydown event och 
 myInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        welcomeUser();
-    
+        welcomeUser();   
         myInput.value = '';
     }
 });
 
 
 // Definierar funktionen welcomeUser
+// skapar ett object med användarens input som 'name'
+// Försöker hämta en lista med hälsningar från localStorage och parsar den. Om inget finns, skapas en tom lista.
+// Lägger till det aktuella hälsningsobjektet i listan med hälsningar.
+// Sparar den uppdaterade listan med hälsningar i localStorage.
+// Anropar appendGreeting för att visa den nya hälsningen på sidan.
 function welcomeUser() {
-
-    // skapar ett object med användarens input som 'name'
     let currentGreeting = { name: myInput.value };
-    // Försöker hämta en lista med hälsningar från localStorage och parsar den. Om inget finns, skapas en tom lista.
     let greetingList = JSON.parse(localStorage.getItem('greetings')) || [];        
-    // Lägger till det aktuella hälsningsobjektet i listan med hälsningar.
     greetingList.push(currentGreeting);
-    // Sparar den uppdaterade listan med hälsningar i localStorage.
     localStorage.setItem('greetings', JSON.stringify(greetingList));
-    // Anropar appendGreeting för att visa den nya hälsningen på sidan.
     appendGreeting(currentGreeting);
-  
 };
 
 /* 
     - difinerar funktionen 'showSavedGreeting' som visar sparade hälsningar från localStorage.
     - med hjälp av variabel 'savedGreetings' hämtar data och konverterar datan till javascript object med nyckeln 'greetings'
     - om det inte finns en array i savedGreetings, säkerställer att savedGreetings är en tom array så att det inte finns error i konsolen?
-    - skapar en forEach-loop och för varje greeting lägger till greeting?
-    
+    - skapar en forEach-loop och för varje greeting lägger till greeting?  
 */
 function showSavedGreeting() {
     let savedGreetings = JSON.parse(localStorage.getItem('greetings'));
@@ -75,7 +70,6 @@ function showSavedGreeting() {
 function appendGreeting(greeting) {
     let greetingElement = document.createElement('div');
     greetingElement.innerHTML = `
-
     <ul class="greetingOutput">
         <li>       
             <h4>Hello ${greeting.name}</h4>
@@ -83,10 +77,7 @@ function appendGreeting(greeting) {
     </ul>
     
     `;
-
-
     document.body.appendChild(greetingElement);
-
 }
 
 
