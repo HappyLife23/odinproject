@@ -1,4 +1,4 @@
-const select = document.getElementById('theme');
+const selectTernary = document.getElementById('theme');
 const html = document.querySelector('html');
 
 
@@ -7,8 +7,8 @@ function update(bgColor, textColor) {
     html.style.color = textColor;
 }
 
-select.addEventListener('change', () => {
-    select.value === 'yellow' 
+selectTernary.addEventListener('change', () => {
+    selectTernary.value === 'yellow' 
     ? update('yellow', 'blue') 
     : update('white', 'black')
 })

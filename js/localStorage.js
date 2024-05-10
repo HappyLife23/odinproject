@@ -1,9 +1,6 @@
-// Lyssnar efter DOMContentLoaded händelsen som avfyras när hela dokumentet har laddats. 
-// Det säkerställer att datan från localStorage visas så snart som möjligt när sidan är redo.
-
 const myText = document.getElementById('myText');
 const myButton = document.getElementById('myButton');
-
+const outputDiv = document.getElementById('output-div');
 // Kör funktionen showSavedGreeting för att visa sparade hälsningar från localStorage.
 document.addEventListener('DOMContentLoaded', () => {
     showSavedGreeting();
@@ -55,20 +52,10 @@ function showSavedGreeting() {
 
 
 // - definerar funktionen appendGreeting som tar en hälsning och visar den på sidan.
-// - skapar ett nytt div-element
-// - div-innerHTMl
-// - ul, li och h4 och inuti <h4> lägger till användarens värde eller input-värdet 
-// - sist appendar div-elementet till bodyn
 function appendGreeting(greeting) {
-    const myDiv = document.createElement('div');
-    myDiv.innerHTML = `
-        <ul class="greetingOutput">
-            <li>
-                <h3>Hello ${greeting.name}</h3>
-            </li>
-        </ul>   
+    outputDiv.innerHTML = `
+         <h3>Hello ${greeting.name} 🙋🏼</h3>
     `;
-    document.body.appendChild(myDiv);
 }
     
 

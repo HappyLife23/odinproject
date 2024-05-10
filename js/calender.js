@@ -1,30 +1,37 @@
 const calender = document.getElementById('div-calender');
 const dateSelect = document.getElementById('date-select');
-const calenderPara = document.getElementById('calender-para')
+const calenderPara = document.getElementById('calender-para');
+const monthName = document.getElementById('month-name');
+const list = document.getElementById('list');
 
+dateSelect.addEventListener('change', () => {
+    const choice = dateSelect.value;
+    let days = 31;
+    if (choice === 'Februari') {
+        days = 29;
+    } else if (
+        choice === 'April' ||
+        choice === 'Juni' ||
+        choice === 'September' ||
+        choice === 'November'
 
-function getMonth(){ 
-    const months = ['January','February','March','April','May','June','July','August','September','Oktober','November','December']
-    
-    const currenyDate = new Date();
+    ) {
+        days = 30;
+    }
 
-    const currentMonth = months[currenyDate.getMonth()];
+    createCalender(days, choice);
+} );
 
-    calender.textContent = currentMonth;
-
-    const choiceMonth = dateSelect.value;
-    
-    switch (choiceMonth) {
-        case 'january':
-            // calender.textContent
-            break;
-        case 'february':
-            calenderPara.textContent = 'hello'
-            break;
-        default:
-            calenderPara = ""
-        }
+function createCalender(days, choice){ 
+    list.innerHTML = "";
+    monthName.textContent = choice;
+    for (let i = 1; i <= days; i++) {
+        const listItem = document.createElement('li');
+        listItem.className = 'li-element';
+        listItem.textContent = i;
+        list.appendChild(listItem)
+    }
 }
-            
-dateSelect.addEventListener('change', getMonth);
+     
+createCalender(31, 'Januari')
             

@@ -18,19 +18,17 @@ h1 {
 }
 a {
   width: 50%;
-
   text-decoration: none;
 }
 input {
-  margin-left: 1rem;
   gap: 20px;
   display: flex;
+  border: none;
 }
 main {
   border: 1px solid;
   padding: 20px;
-  display: flex;
-  margin: 2rem;
+  margin: 1rem;
   gap: 1rem;
   border-radius: 10px;
 }
@@ -41,8 +39,16 @@ label {
 #myText {
   padding: 10px;
 }
+.label-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.submit-save-btn {
+  margin-left: 7.5rem;
+}
 h3 {
-  margin-left: 3rem;
+  margin-top: 10px;
 }
 
 #myText {
@@ -54,12 +60,15 @@ h3 {
   padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
+  background-color: lightblue;
 }
 #localStorage-Btn {
   padding: 8px 12px;
   border-radius: 5px;
-  margin-left: 5rem;
   cursor: pointer;
+  border: none;
+  background-color: lightblue;
 }
 
 .greetingOutput {
@@ -91,7 +100,39 @@ h3 {
   margin-left: 10px;
 }
 
-#ternary,
-#calender-section {
+#ternary {
   margin-top: 1rem;
+}
+
+/* calender-css */
+#calender-section {
+  display: flex;
+  flex-direction: column;
+}
+.label-option {
+  display: flex;
+}
+#list {
+  display: flex;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.li-element {
+  list-style-type: none;
+  display: flex;
+  border: 1px solid;
+  padding: 5px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+}
+#month-name {
+  margin: 10px 0;
+}
+#date-select {
+  margin-left: 20px;
+}
+.calender-label {
+  font-size: 1.5rem;
 }

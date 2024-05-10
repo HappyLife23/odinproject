@@ -73,13 +73,20 @@
         >Youtube lesson about git-commit</a
       >
     </div> -->
+    <h2 style="padding-left: 1rem; margin: 1rem">Local Storage</h2>
     <main>
-      <label>Enter your name: </label><br />
-      <input type="text" id="myText" placeholder="name..." /><br />
-      <button type="button" id="myButton">Submit</button>
-      <button id="localStorage-Btn">Save to local</button>
+      <div class="label-input">
+        <label>Enter your name: </label>
+        <input type="text" id="myText" placeholder="name..." />
+      </div>
+      <div class="submit-save-btn">
+        <button type="button" id="myButton">Submit</button>
+        <button id="localStorage-Btn">Save to local</button>
+      </div>
+      <div id="output-div"></div>
     </main>
     <!-- condition-section -->
+    <h2 style="padding-left: 1rem; margin: 1rem">if/else statment</h2>
     <section class="weather-select">
       <label class="weather-label"> Select a weather type for today: </label>
       <select id="weather-section">
@@ -94,6 +101,7 @@
       <img id="weather-img" src="" alt="" />
     </section>
     <!-- Ternary-section -->
+    <h2 style="padding-left: 1rem; margin: 1rem">Ternary-section</h2>
     <section id="ternary">
       <label class="ternary-label">Choose theme:</label>
       <select id="theme">
@@ -102,14 +110,29 @@
       </select>
     </section>
     <!-- Calender-section -->
+    <h2 style="padding-left: 1rem; margin: 1rem">Calender</h2>
     <section id="calender-section">
-      <label class="calender-label"> Select a month: </label>
-      <div id="div-calender">
+      <div class="label-option">
+        <label class="calender-label"> Select a month: </label>
         <select id="date-select">
           <option value="">Select month</option>
-          <option value="january">January</option>
-          <option value="february">February</option>
+          <option value="Januari">January</option>
+          <option value="Februari">February</option>
+          <option value="Mars">Mars</option>
+          <option value="April">April</option>
+          <option value="Maj">Maj</option>
+          <option value="Juni">Juni</option>
+          <option value="Juli">Juli</option>
+          <option value="Augusti">Augusti</option>
+          <option value="September">September</option>
+          <option value="Oktober">Oktober</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
         </select>
+      </div>
+      <div>
+        <h2 id="month-name"></h2>
+        <ul id="list"></ul>
       </div>
       <p id="calender-para"></p>
     </section>
@@ -120,7 +143,7 @@
     <!-- <script src="./js/test-1.js"></script> -->
     <script src="./js/localStorage.js"></script>
     <!-- <script src="./js/condition.js"></script> -->
-    <!-- <script src="./js/switch.js"></script> -->
+    <script src="./js/switch.js"></script>
     <script src="./js/ternaryOperator.js"></script>
     <script src="./js/calender.js"></script>
   </body>
