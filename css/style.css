@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(225, 206, 96);
   /* outline: 2px solid red; */
 }
 .container {
@@ -67,4 +66,32 @@ h3 {
   padding: 5px;
   margin-left: 3rem;
   display: block;
+}
+
+.weather-select,
+#ternary,
+#calender-section {
+  margin: 0 2rem 0 2rem;
+  border: 1px solid;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+}
+.weather-label,
+.ternary-label {
+  padding: 6px 12px 6px 12px;
+}
+#weather-para {
+  margin-left: 20px;
+  align-self: center;
+}
+
+#weather-img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+#ternary,
+#calender-section {
+  margin-top: 1rem;
 }

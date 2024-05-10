@@ -91,3 +91,21 @@ const fruits = ["Apple", "Banana", "Orange"];
 for (x in fruits) {
   console.log(x);
 }
+
+// Conditional Statements
+// if: kör den kodblocken om den är "true"
+// else if: kör om den kodblocken på if är "false"
+// esle: kör om allt är false
+//switch: kör flera kodblock 
+
+let condition = "if = condition";
+let hour = 11;
+// ex
+if (condition) {
+  //kod block som som ska bli executed
+  console.log(condition);
+}
+
+if (hour < 18) {
+  console.log("Good day");
+}

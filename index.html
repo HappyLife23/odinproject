@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1 onmouseover="mouseOver()">Hello World!</h1>
+    <!-- <h1 onmouseover="mouseOver()">Hello World!</h1> -->
     <!-- <div class="inout item">
       <input type="checkbox" name="name" id="name" /><br />
       <input type="button" value="Click me" /><br />
@@ -79,10 +79,49 @@
       <button type="button" id="myButton">Submit</button>
       <button id="localStorage-Btn">Save to local</button>
     </main>
+    <!-- condition-section -->
+    <section class="weather-select">
+      <label class="weather-label"> Select a weather type for today: </label>
+      <select id="weather-section">
+        <option value="">Make a choice</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="cloudy">Cloudy</option>
+        <option value="snowing">Snowing</option>
+        <option value="surprise">Surprise</option>
+      </select>
+      <p id="weather-para"></p>
+      <img id="weather-img" src="" alt="" />
+    </section>
+    <!-- Ternary-section -->
+    <section id="ternary">
+      <label class="ternary-label">Choose theme:</label>
+      <select id="theme">
+        <option value="white">White</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </section>
+    <!-- Calender-section -->
+    <section id="calender-section">
+      <label class="calender-label"> Select a month: </label>
+      <div id="div-calender">
+        <select id="date-select">
+          <option value="">Select month</option>
+          <option value="january">January</option>
+          <option value="february">February</option>
+        </select>
+      </div>
+      <p id="calender-para"></p>
+    </section>
 
+    <!-- import-js-file -->
     <script type="module" src="./js/main.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
     <!-- <script src="./js/test-1.js"></script> -->
     <script src="./js/localStorage.js"></script>
+    <!-- <script src="./js/condition.js"></script> -->
+    <!-- <script src="./js/switch.js"></script> -->
+    <script src="./js/ternaryOperator.js"></script>
+    <script src="./js/calender.js"></script>
   </body>
 </html>
