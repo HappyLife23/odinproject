@@ -136,3 +136,15 @@ h3 {
 .calender-label {
   font-size: 1.5rem;
 }
+
+/* change background color */
+.change-bg-section {
+  display: flex;
+  flex-direction: column;
+}
+.header-bg {
+  margin: 1rem;
+}
+.label-input {
+  margin: 1rem;
+}
