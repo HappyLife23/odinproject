@@ -30,7 +30,7 @@ dateSelect.addEventListener('change', () => {
 // min ul-content blir value av det user har valt
 // skapar en for-loop och låter första dagenn börjar på 1
 // skapar li-element inuti min ul-element och ger det ett className
-// lli-elementens content blir det indextet som user har valt
+// li-elementens content blir det indextet som user har valt
 // appendar li'n till ul
 function createCalender(days, choice){ 
     list.innerHTML = "";
