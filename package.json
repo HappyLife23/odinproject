@@ -1,0 +1,22 @@
+{
+  "name": "odinproject-1",
+  "version": "1.0.0",
+  "description": "- Absolute and Relative links:",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon index.mjs",
+    "start": "node index-mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.10",
+    "epxress": "^0.0.1-security",
+    "nodemon": "^3.1.3"
+  },
+  "dependencies": {
+    "express-validator": "^7.1.0"
+  }
+}
