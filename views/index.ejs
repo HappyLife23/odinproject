@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= movies.title %></title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Movies</h1>
-    <p>Detta är innehållet från min ejs-fil</p>
-    <% movies.forEach(movie => { %>
-    <h3><%= movie.name %></h3>
-    <h5><%= movie.superpower %></h5>
-    <img src="<%= movie.image %>" alt="<%= movie.name %>" />
-    <% }) %>
+    <div class="header">
+      <h1>Superheroes</h1>
+      <p>Favorite superheros</p>
+    </div>
+    <div class="container">
+      <% movies.forEach(movie => { %>
+      <div class="hero-card">
+        <h4>Hero: <%= movie.name %></h4>
+        <h5><strong>Suprpower:</strong> <%= movie.superpower %></h5>
+        <img
+          class="hero-img"
+          src="<%= movie.image %>"
+          alt="<%= movie.name %>"
+        />
+      </div>
+      <% }) %>
+    </div>
   </body>
 </html>

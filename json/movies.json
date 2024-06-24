@@ -1,47 +1,30 @@
 [
   {
     "name": "Batman",
-    "superpower": "very rich",
-    "image": "images/batman.png"
-  },
-  {
-    "name": "Aquaman",
-    "superpower": "can live under the water",
-    "image": "images/batman.png"
-  },
-  {
-    "name": "Batman",
-    "superpower": "Very Rich",
-    "image": "images/batman.png",
-    "_id": "66799e5c1b6566b9ef3b4bdf",
-    "__v": 0
-  },
-  {
-    "name": "Batman",
-    "superpower": "Very Rich",
-    "image": "images/batman.png",
-    "_id": "66799e69d1ab1cf06859e535",
-    "__v": 0
-  },
-  {
-    "name": "David",
-    "superpower": "Very Rich",
-    "image": "images/batman.png",
-    "_id": "6679a3b43012ac4e82df1bba",
-    "__v": 0
-  },
-  {
-    "name": "David",
-    "superpower": "Very Rich",
-    "image": "",
-    "_id": "6679aa3b4e61cf75267bfe7f",
-    "__v": 0
-  },
-  {
-    "name": "Sofie",
     "superpower": "Very Rich",
     "image": "../images/batman.png",
     "_id": "6679acc2bcf0624f3418c894",
+    "__v": 0
+  },
+  {
+    "name": "Superman",
+    "superpower": "Powerfull",
+    "image": "../images/superman.png",
+    "_id": "6679af132b7650b9f16b9783",
+    "__v": 0
+  },
+  {
+    "name": "Superman",
+    "superpower": "Very Powerfull",
+    "image": "../images/doctor.png",
+    "_id": "6679af37e5bd0839bb171158",
+    "__v": 0
+  },
+  {
+    "name": "Hulk",
+    "superpower": "Powerfull",
+    "image": "../images/hulk.png",
+    "_id": "6679af4a18c252566a37a3f3",
     "__v": 0
   }
 ]
