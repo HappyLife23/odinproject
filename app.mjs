@@ -5,10 +5,10 @@ import { fileURLToPath } from 'url';
 import { nanoid } from 'nanoid';
 import { connectToMongodb } from './connect-to-mongodb/mongodb.mjs'
 import fs from 'fs';
-import {postPost} from './routes/index.mjs'
+import { postPost } from './routes/index.mjs'
+import { movieModel } from './models/movieModel.mjs';
 
-const id = nanoid()
-console.log('Generated ID:', id);
+const id = nanoid();
 const app = express();
 const PORT = 3000;
 
@@ -26,43 +26,53 @@ const updateDatabase = () => {
 }
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true }));
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/movies', postPost);
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
-app.get('/', (request, response) => {
-    // return response.status(200).send('Please do a little koding everyday for your future.');
-    const header = 'Home';
-    const title = 'homepage'
-    response.render('index', {header: header, title: title});
+app.get('/', async (request, response) => {
+ 
+    try {
+        let movies = await movieModel.find();
+        response.render('index',{movies});
+    } catch (error) {
+        response.status(500).send('Server not found.')
+        console.error(error);
+    }
 });
 
 
 // tried to move POST to router but it didnt work???
 const actorSchema = new mongoose.Schema(
     {
-        title: String,
-        superpower: String
+        name: String,
+        superpower: String,
+        image: String
     },
     // Skapar en ny kollektion
     // {collection: 'movies'}
 );
 
-const Movie = mongoose.model('Movie', actorSchema, 'actors');
-
-app.post('/movies', async (request, response) => {
-    const { title, superpower } = request.body;
-    const newMovie = new Movie({
-        title: title,
-        superpower: superpower
+// const Movie = mongoose.model('Movie', actorSchema, 'actors');
+// const movieModel = mongoose.model('Movie', actorSchema, 'actors');
+app.post('/', async (request, response) => {
+    const { name, superpower, image } = request.body;
+    const newMovie = new movieModel({
+        name: name,
+        superpower: superpower,
+        image: image
     })
 
     try {
         const savedMovie = await newMovie.save();
-        console.log('savedmovie:', savedMovie);
         posts.push(savedMovie);
+        // response.status(201).json(savedMovie);
+        console.log('savedmovie:', savedMovie);
         updateDatabase();
         
     } catch (error) {
@@ -71,11 +81,10 @@ app.post('/movies', async (request, response) => {
     } 
 });
 
-app.use('/movies', postPost);
 
 app.listen(PORT, () => {
     console.log(`App is running on localhost: http://localhost:${PORT}`);
 });
 
 
-export { posts, pathToPosts, updateDatabase, actorSchema }
+export { posts, pathToPosts, updateDatabase, actorSchema}

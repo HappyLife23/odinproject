@@ -1,80 +1,47 @@
 [
   {
-    "title": "Batman",
-    "superpower": "very rich"
+    "name": "Batman",
+    "superpower": "very rich",
+    "image": "images/batman.png"
   },
   {
-    "title": "Aquaman",
-    "superpower": "can live under the water"
+    "name": "Aquaman",
+    "superpower": "can live under the water",
+    "image": "images/batman.png"
   },
   {
-    "title": "Superman",
-    "superpower": "very powerfull"
-  },
-  {
-    "title": "Black Adam",
-    "superpower": "very powerfull"
-  },
-  {
-    "title": "Dr.manhattan",
-    "superpower": "godmode"
-  },
-  {
-    "title": "Dr.manhattan",
-    "superpower": "godmode"
-  },
-  {
-    "title": "Black Adam",
-    "superpower": "very powerfull",
-    "_id": "66781742eb7f0f08a5abfab2",
+    "name": "Batman",
+    "superpower": "Very Rich",
+    "image": "images/batman.png",
+    "_id": "66799e5c1b6566b9ef3b4bdf",
     "__v": 0
   },
   {
-    "title": "Black Adam",
-    "superpower": "very powerfull",
-    "_id": "66781763ad9b3912194db10c",
+    "name": "Batman",
+    "superpower": "Very Rich",
+    "image": "images/batman.png",
+    "_id": "66799e69d1ab1cf06859e535",
     "__v": 0
   },
   {
-    "title": "Black Panther",
-    "superpower": "very powerfull",
-    "_id": "6678184851b4e06bbde920bc",
+    "name": "David",
+    "superpower": "Very Rich",
+    "image": "images/batman.png",
+    "_id": "6679a3b43012ac4e82df1bba",
     "__v": 0
   },
   {
-    "title": "Black Panther",
-    "superpower": "very powerfull",
-    "_id": "6678198607bf83cc78a09f65",
+    "name": "David",
+    "superpower": "Very Rich",
+    "image": "",
+    "_id": "6679aa3b4e61cf75267bfe7f",
     "__v": 0
   },
   {
-    "title": "Black Panther",
-    "superpower": "very powerfull",
-    "_id": "667819ad26edb001ce1674ab",
-    "__v": 0
-  },
-  {
-    "title": "Äntligen??",
-    "superpower": "very powerfull",
-    "_id": "667827eace3a12d0049f58fa",
-    "__v": 0
-  },
-  {
-    "title": "actors??",
-    "superpower": "very powerfull",
-    "_id": "66782de1893c0f577ab52560",
-    "__v": 0
-  },
-  {
-    "title": "actors jajamän??",
-    "superpower": "very powerfull",
-    "_id": "66782e04c0f3dda3e0851556",
-    "__v": 0
-  },
-  {
-    "title": "actors jajamäncfunkar ??",
-    "superpower": "very powerfull",
-    "_id": "667838f38a839b7480da9d19",
+    "name": "Sofie",
+    "superpower": "Very Rich",
+    "image": "../images/batman.png",
+    "_id": "6679acc2bcf0624f3418c894",
     "__v": 0
   }
 ]

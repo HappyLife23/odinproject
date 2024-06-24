@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= title %></title>
+    <title><%= movies.title %></title>
   </head>
   <body>
-    <h1><%= header %></h1>
+    <h1>Movies</h1>
     <p>Detta är innehållet från min ejs-fil</p>
+    <% movies.forEach(movie => { %>
+    <h3><%= movie.name %></h3>
+    <h5><%= movie.superpower %></h5>
+    <img src="<%= movie.image %>" alt="<%= movie.name %>" />
+    <% }) %>
   </body>
 </html>
