@@ -26,5 +26,12 @@
     "image": "../images/hulk.png",
     "_id": "6679af4a18c252566a37a3f3",
     "__v": 0
+  },
+  {
+    "name": "Wolverin",
+    "superpower": "Imortal",
+    "image": "../images/wolwi.png",
+    "_id": "6679b6abc98bf5545b38332f",
+    "__v": 0
   }
 ]
