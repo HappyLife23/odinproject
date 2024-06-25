@@ -9,18 +9,20 @@
   <body>
     <div class="header">
       <h1>Superheroes</h1>
-      <p>Favorite superheros</p>
+      <p>Favorite Superheros</p>
     </div>
     <div class="container">
       <% movies.forEach(movie => { %>
       <div class="hero-card">
-        <h4>Hero: <%= movie.name %></h4>
-        <h5><strong>Suprpower:</strong> <%= movie.superpower %></h5>
         <img
           class="hero-img"
           src="<%= movie.image %>"
           alt="<%= movie.name %>"
         />
+        <h3><%= movie.name %></h3>
+        <h4><%= movie.superpower %></h4>
+        <p><strong>Description:</strong><%= movie.description %></p>
+        <p><Strong>Background history:</Strong><%= movie.background %></p>
       </div>
       <% }) %>
     </div>

@@ -7,18 +7,28 @@
 .header {
   text-align: center;
 }
+
 .container {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 10px;
 }
 
 .hero-card {
   border: 1px solid black;
   padding: 10px;
-  text-align: center;
   margin: 10px;
+}
+.hero-card h3 {
+  text-align: center;
+  padding: 5px;
+}
+.hero-card h4 {
+  margin: 10px 0;
+}
+.hero-card p {
+  line-height: 20px;
 }
 
 .hero-img {

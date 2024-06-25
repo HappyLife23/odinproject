@@ -1,37 +1,56 @@
 [
   {
-    "name": "Batman",
-    "superpower": "Very Rich",
-    "image": "../images/batman.png",
-    "_id": "6679acc2bcf0624f3418c894",
+    "name": "Snälla Funka??",
+    "superpower": "Very powerfull",
+    "image": "../images/blackadam.png",
+    "description": "Black Adam, spelad av Dwayne Johnson, är en komplex antihjälte i DC-universumet, känd för sin mörka bakgrund och enorma kraft, vilket gör honom till en formidabel motståndare till Shazam.",
+    "background": "Black Adam, ursprungligen kallad Teth-Adam, var en egyptisk slav som fick sina krafter av trollkarlen Shazam. Han blev korrupt av sin makt och bannlystes, men återvände senare som en anti-hjälte och mäktig fiende till Shazam.",
+    "_id": "667a6e866641c1e08879d7f4",
     "__v": 0
   },
   {
-    "name": "Superman",
-    "superpower": "Powerfull",
-    "image": "../images/superman.png",
-    "_id": "6679af132b7650b9f16b9783",
-    "__v": 0
-  },
-  {
-    "name": "Superman",
-    "superpower": "Very Powerfull",
+    "name": "Snälla Funka??",
+    "superpower": "God",
     "image": "../images/doctor.png",
-    "_id": "6679af37e5bd0839bb171158",
+    "description": "Dr. Manhattan, spelad av Billy Crudup, är en komplex och övermänsklig varelse i Watchmen-universumet, känd för sin djupa existentialism och enorma krafter, vilket gör honom till en formidabel och omstridd figur i historien.",
+    "background": "Dr. Manhattan, ursprungligen Jon Osterman, var en fysiker som förvandlades till en övermänsklig varelse efter en olycka med en kärnreaktor. Han fick nästan obegränsad makt över tid, rum och materia, vilket gjorde honom till en central och komplex figur i Watchmen-universumet.",
+    "_id": "667a6fd7b7a18351de98f926",
     "__v": 0
   },
   {
-    "name": "Hulk",
-    "superpower": "Powerfull",
-    "image": "../images/hulk.png",
-    "_id": "6679af4a18c252566a37a3f3",
+    "name": "Deadpool",
+    "superpower": "Imortal",
+    "image": "../images/deadpool.png",
+    "description": "Deadpool, spelad av Ryan Reynolds, är en oortodox antihjälte i Marvel-universumet, känd för sin vassa humor och regenerativa förmåga, vilket gör honom till en unik och oförutsägbar karaktär.",
+    "background": "Deadpool, vars riktiga namn är Wade Wilson, var en före detta legosoldat som drabbades av cancer. Efter att ha genomgått ett experimentellt program, som gav honom accelererad läkningsförmåga men också förvrängde hans utseende.",
+    "_id": "667a70703e43f3f1dc591c90",
     "__v": 0
   },
   {
-    "name": "Wolverin",
+    "name": "Wolverine",
     "superpower": "Imortal",
     "image": "../images/wolwi.png",
-    "_id": "6679b6abc98bf5545b38332f",
+    "description": "Wolverine, spelad av Hugh Jackman, är en ikonisk mutant med adamantiumklor och en otrolig läkningsförmåga, vilket gör honom till en formidabel och tålig krigare i X-Men.",
+    "background": "Wolverine, född James 'Logan' Howlett, är en mutant med snabb läkning och benklor täckta i adamantium. Hans långa, stridsfyllda liv och förluster har gjort honom till en hård, ensam krigare och en viktig medlem av X-Men.",
+    "_id": "667a70cc99ce0c651053f8b2",
+    "__v": 0
+  },
+  {
+    "name": "Wolverine",
+    "superpower": "Imortal",
+    "image": "../images/wolwi.png",
+    "description": "Wolverine, spelad av Hugh Jackman, är en ikonisk mutant med adamantiumklor och en otrolig läkningsförmåga, vilket gör honom till en formidabel och tålig krigare i X-Men.",
+    "background": "Wolverine, född James 'Logan' Howlett, är en mutant med snabb läkning och benklor täckta i adamantium. Hans långa, stridsfyllda liv och förluster har gjort honom till en hård, ensam krigare och en viktig medlem av X-Men.",
+    "_id": "667a7706fe8856cd9716720d",
+    "__v": 0
+  },
+  {
+    "name": "Wolverine",
+    "superpower": "Imortal",
+    "image": "../images/wolwi.png",
+    "description": "Wolverine, spelad av Hugh Jackman, är en ikonisk mutant med adamantiumklor och en otrolig läkningsförmåga, vilket gör honom till en formidabel och tålig krigare i X-Men.",
+    "background": "Wolverine, född James 'Logan' Howlett, är en mutant med snabb läkning och benklor täckta i adamantium. Hans långa, stridsfyllda liv och förluster har gjort honom till en hård, ensam krigare och en viktig medlem av X-Men.",
+    "_id": "667a78401f73c28d48d77b78",
     "__v": 0
   }
 ]
