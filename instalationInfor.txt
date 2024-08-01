@@ -1,0 +1,8 @@
+* live-server  command in terminal *
+
+// Install it first
+sudo npm i live-server -g
+
+// Then run it in terminal
+live-server 
+then push enter
