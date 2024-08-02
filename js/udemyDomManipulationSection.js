@@ -37,7 +37,8 @@ click.addEventListener('click', () => {
       score--;
       myScore.textContent = score;
     } else {
-      message.textContent = 'You Lost the game 🥲';
+      message.textContent = 'You Lost the game, no more guessing 🥲';
+      document.body.style.backgroundColor = 'Red';
       myScore.textContent = 0;
     }
   }
